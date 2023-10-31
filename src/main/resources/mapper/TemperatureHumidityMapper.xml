@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.metaclothes.temperature.mapper.TemperatureHumidityMapper">
+
+    <!-- 定义一个简单的自定义查询示例 -->
+    <select id="selectByTemperatureRange" resultType="com.metaclothes.temperature.model.TemperatureHumidityData">
+        SELECT id, temperature, humidity, timestamp
+        FROM temperature_humidity_data
+        WHERE temperature BETWEEN #{minTemperature} AND #{maxTemperature}
+    </select>
+
+    <!-- 如果有其他自定义查询或操作，您可以在这里继续定义 -->
+
+</mapper>
