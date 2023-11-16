@@ -8,4 +8,6 @@ public class ThresholdSettings {
     private Long id;
     private BigDecimal maxTemperature;
     private BigDecimal maxHumidity;
+
+
 }

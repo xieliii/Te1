@@ -2,12 +2,12 @@ package com.temperaturehumiditymonitor.service;
 
 import com.temperaturehumiditymonitor.model.TemperatureHumidityData;
 import com.temperaturehumiditymonitor.model.ThresholdSettings;
-import com.temperaturehumiditymonitor.service.TemperatureHumidityService;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+
 @Service
 public class TemperatureHumidityServiceImpl implements TemperatureHumidityService {
 
